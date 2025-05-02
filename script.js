@@ -41,7 +41,7 @@ function burgerfunksjon() {
     var linkerl = document.querySelector("#linker")
     var overlaym = document.querySelector("#overlay")
 
-    if (linkerl.style.display === "none" && window.innerWidth < 800) {
+    if (linkerl.style.display === "none" || linkerl.style.display === "" && window.innerWidth < 800) {
         aktivk.style.display = "none"
         dødk.style.display = "block"
         linkerl.style.display = "block"
